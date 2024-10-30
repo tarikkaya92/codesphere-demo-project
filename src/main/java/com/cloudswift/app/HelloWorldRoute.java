@@ -9,7 +9,7 @@ public class HelloWorldRoute extends RouteBuilder {
     @Override
     public void configure() throws Exception {
         from("direct:hello")
-                .setBody(constant("{\"message\": \"Hello, World!\"}"))
+                .setBody(constant("{\"message\": \"Hello, Worldd!\"}"))
                 .setHeader("Content-Type", constant("application/json"));
     }
 }
